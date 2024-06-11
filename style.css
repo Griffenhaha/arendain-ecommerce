@@ -1,0 +1,483 @@
+*{
+    
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    position: absolute;
+    background-color: rgb(39, 37, 37);
+    
+}
+
+#body1{
+    display: block;
+}
+
+
+.header{
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    height: 130px;
+    width: 100%;
+    background-color: rgb(19, 17, 17);
+    box-shadow: 10 12px 26px hsla(220, 32%, 8%, 3);
+}
+.sub-header{
+    position: fixed;
+    height: 40px;
+    width: 100%;
+    background-color: rgb(31, 30, 30);
+    text-align: right;
+    justify-content: flex-end;
+    display: flex;
+    
+}
+
+.label{
+    position: relative;
+    color: rgba(253, 253, 253, 0.973);
+    margin-right: 30px;
+    margin-top: 9px;
+}
+
+#brand{
+    position: absolute;
+    padding: 20px;
+    bottom: 20px;
+    left: 50px;
+    cursor: pointer;
+}
+
+#icon{
+    position: absolute;
+    scale: 1.3;
+    padding: 20px;
+    left: 25px;
+    bottom: 20px;
+    cursor: pointer;
+}
+
+#box{
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    background-color: rgb(16, 17, 17);
+    border: none;
+    border-radius: 20px;
+    top: 200px;
+    left: 700px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#username{
+    margin-top: 100;
+    width: 200px;
+    height: 30px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+#password{
+    margin-top: 10px;
+    width: 200px;
+    height: 30px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+#log{
+    width: 100px;
+    margin-top: 20px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#items{
+    position: fixed;
+    width: 100%;
+    height: 944px;
+    bottom: 0;
+    display: grid;
+}
+#tshirt{
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    background-image: url(tshirt/header_t-shirts2.avif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 34%;
+    height: 472px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    transition: 1s;
+}
+#tshirt:hover{
+    transform: scale(1.1);
+    opacity: 0.5;
+}
+
+#label1{
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background-color: black;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 1s;
+}
+#label2{
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background-color: black;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 1s;
+}
+#label3{
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background-color: black;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 1s;
+}
+#label4{
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background-color: black;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 1s;
+}
+#label5{
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background-color: black;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 1s;
+}
+#label6{
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background-color: black;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 1s;
+}
+
+#short{
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    background-image: url(short/SD_04_T87_3044V_HD_X_EC_90.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 33%;
+    height: 472px;
+    left: 34%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    transition: 1s;
+}
+#short:hover{
+    transform: scale(1.1);
+    opacity: 0.5;
+}
+
+#shoes{
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    background-image: url(shoes/1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 34%;
+    height: 472px;
+    left: 67%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    transition: 1s;
+}
+#shoes:hover{
+    transform: scale(1.1);
+    opacity: 0.5;
+}
+
+#bags{
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    background-image: url(bags/81RELFdUhoL._AC_SL1500_.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 34%;
+    height: 472px;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    transition: 1s;
+}
+#bags:hover{
+    transform: scale(1.1);
+    opacity: 0.5;
+}
+
+#cup{
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    background-image: url(cup/1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 33%;
+    height: 472px;
+    left: 34%;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    transition: 1s;
+}
+#cup:hover{
+    transform: scale(1.1);
+    opacity: 0.5;
+}
+
+#brief{
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    background-image: url(pants/1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 33%;
+    height: 472px;
+    left: 67%;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    transition: 1s;
+}
+#brief:hover{
+    transform: scale(1.1);
+    opacity: 0.5;
+}
+
+.m{
+    cursor: pointer;
+}
+
+#tsItem{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#tsItem img{
+    margin-right: 100px;
+    margin-top: 400px;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    width: 300px;
+    height: 400px;
+    transition: 0.8s;
+}
+#tsItem img:hover{
+    transform: scale(1.1);
+    filter: grayscale();
+}
+
+#shItem{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#shItem img{
+    margin-right: 100px;
+    margin-top: 400px;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    width: 300px;
+    height: 400px;
+    transition: 0.8s;
+}
+#shItem img:hover{
+    transform: scale(1.1);
+    filter: grayscale();
+}
+
+#shoesItem{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#shoesItem img{
+    margin-right: 100px;
+    margin-top: 400px;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    width: 300px;
+    height: 400px;
+    transition: 0.8s;
+}
+#shoesItem img:hover{
+    transform: scale(1.1);
+    filter: grayscale();
+}
+
+#bagItem{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#bagItem img{
+    margin-right: 100px;
+    margin-top: 400px;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    width: 300px;
+    height: 400px;
+    transition: 0.8s;
+}
+#bagItem img:hover{
+    transform: scale(1.1);
+    filter: grayscale();
+}
+
+#capItem{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#capItem img{
+    margin-right: 100px;
+    margin-top: 400px;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    width: 300px;
+    height: 400px;
+    transition: 0.8s;
+}
+#capItem img:hover{
+    transform: scale(1.1);
+    filter: grayscale();
+}
+
+#pantsItem{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#pantsItem img{
+    margin-right: 100px;
+    margin-top: 400px;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    width: 300px;
+    height: 400px;
+    transition: 0.8s;
+}
+#pantsItem img:hover{
+    transform: scale(1.1);
+    filter: grayscale();
+}
+#head{
+    position: absolute;
+    width: 100%;
+    top: 18%;
+}
+#head a{
+    position: absolute;
+    left: 10;
+    top: 0;
+    scale: 2;
+    cursor: pointer;
+}
